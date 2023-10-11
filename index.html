@@ -7,7 +7,8 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-image: url(981789.jpg);
+            /* background-image: url(981789.jpg); */
+            background-color: whitesmoke;
             background-repeat: no-repeat;
             background-size: cover;
             background-attachment: fixed;
@@ -15,17 +16,20 @@
         }
         .header {
             text-align: center;
-            background-image: url(981789.jpg);
+            /* background-image: url(981789.jpg); */
+            background-color: whitesmoke;
             background-repeat: no-repeat;
             background-size: cover;
             background-attachment: fixed;
             background-position: center;
-            
+            text-align: center;
+            background-color: #010920;
+            color: #fff;;
         }
         .contact-info-container {
             display: flex; /* Added flexbox container */
             flex-direction: row; /* Horizontal layout */
-            justify-content: center; /* Center horizontally */
+            justify-content: left; /* Center horizontally */
             align-items: center; /* Center vertically */
             margin-top: 20px;
             margin: 20px;
@@ -62,15 +66,13 @@
             padding: 0;
             background-color: #f5f5f5;
         }
-        .header {
-            text-align: center;
-            background-color: #333;
-            color: #fff;
-            padding: 20px 0;
-        }
+    
         .contact-info {
             margin-top: 20px;
-            text-align: center;
+            margin-right: 25%;
+            margin-left: 200px;
+            font-family: Arial, sans-serif;
+            text-align: left;
         }
         .section-heading {
             font-weight: bold;
@@ -97,16 +99,36 @@
             margin-left: 20px;
         }
         .image img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 50%;
+            width: 500px;
+            max-width: 500px;
+            height: 700px;
+            max-height: 700px;
+            /* border-radius: 50%; */
         }
+        .link-box {
+            margin-bottom: 10px;
+        }
+        .fixed-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 75px;
+            z-index: 1000; /* Adjust the z-index as needed */
+            background-color: black;
+            color: #fff;
+            /* padding-top: 5px; */
+            padding-bottom: 30px;
+        }
+
+        
+        
     </style>
 
 </head>
 <body>
-    <div class="header">
-        <h1>WORK IN PROGRESS</h1>
+    <div class="header fixed-header">
+        <h2>WORK IN PROGRESS</h2>
         <p><p id="demo"></p>
 
         <script>
@@ -142,10 +164,15 @@
 
     </div>
 
+    <div class="hero-banner">
+        <!-- You can set the background image for the hero banner here -->
+        <img src="hero-image2.png" alt="Hero Banner Image">
+    </div>
+
     <div class="contact-info-container">
         <!-- Added class name -->
         <div class="image">
-            <img src="Profile.png" alt="Profile Picture" width="250" height="500">
+            <img src="Profile.jpg" alt="Profile Picture" width=50% height=50%>
         </div>
         <!-- Added class name -->
         <div class="contact-info">
@@ -235,8 +262,24 @@
         </ul>
     </div>
 
-    <div>
-        <a href="https://www.youtube.com/watch?v=rg6CiPI6h2g&pp=ygUScG9rZW1vbiB0aGVtZSBzb25n"><button><h1>CLICK HERE FOR MORE INFO</h1></button></a>
+    <div class="link-box">
+        <a href="https://www.youtube.com/watch?v=rg6CiPI6h2g&pp=ygUScG9rZW1vbiB0aGVtZSBzb25n"><button><h3>MORE INFO</h3></button></a>
     </div>
+
+    <style>
+        .hero-banner {
+            background-image: url(hero-image2.png);
+            background-size: cover;
+            background-position: center;
+            height: 100%; /* Adjust the height as needed */
+            position: relative;
+        }
+        .hero-banner img {
+            width: 100%;
+            height: 100%;
+        }
+        
+    </style>
+
 </body>
 </html>
